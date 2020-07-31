@@ -1,0 +1,13 @@
+.SmallContainer {
+    height: 30px;
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.Container {
+    height: 40px;
+    width: 500px;
+    box-sizing: border-box;
+    display: flex;
+}

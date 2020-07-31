@@ -1,0 +1,31 @@
+.Container {
+    height: 5vh;
+    width: 100%;
+    position: sticky;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Message {
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.IconContainer {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Info {
+    background-color: #709FEB;
+}
+
+.Error {
+    background-color: #EE8981;
+}

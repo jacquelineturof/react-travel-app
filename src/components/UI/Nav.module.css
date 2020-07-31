@@ -1,0 +1,102 @@
+.Nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.Left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Right {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IconContainer {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.Logo {
+    height: 50%;
+    width: 10%;
+}
+
+.LinksContainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+}
+
+.HostLink,
+.AuthLink {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+
+.HostLink {
+    color: black;
+    font-weight: 300;
+    justify-content: space-around;
+    transition: color .4s;
+}
+
+.HostLink:hover {
+    color: #226CE0;
+}
+
+.AuthLink {
+    height: 35px;
+    border-radius: .3rem;
+    background-color: #226CE0;
+    justify-content: center;
+    color: white;
+    transition: background-color .4s;
+}
+
+.AuthLink:hover {
+    background-color: #709FEB;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Left {
+        width: 50%;
+    }
+
+    .HostLink,
+    .AuthLink {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Right {
+        width: 30%;
+    }
+
+    .Logo {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Right {
+        width: 40%;
+    }
+}
