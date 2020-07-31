@@ -1,0 +1,40 @@
+.Card {
+    height: 400px;
+    width: 275px;
+    position: relative;
+}
+
+.CardImage,
+.Overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.Overlay {
+    z-index: 1;
+    background-color: #226CE0;
+    opacity: .6;
+    transition: opacity .6s;
+}
+
+.CardLabel {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    z-index: 2;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+    .Card {
+        height: 350px;
+        width: 225px;
+    }
+}
+
+.Overlay:hover {
+    opacity: 0;
+}
